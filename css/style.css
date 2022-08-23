@@ -1,0 +1,66 @@
+body{
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+}
+.profile-area{
+    padding: 80px 0;
+}
+.card{
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 15px;
+}
+.img1 img{
+    height: 200px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+  
+}
+.img2 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #ff6e57bf;
+    margin-top: -80px;
+}
+.card:hover .img2 img{
+    border-color: darkmagenta;
+    transition: .7s;
+}
+.main-text{
+    padding: 10px 0;
+    text-align:center;
+}
+.main-text h2{
+    margin: 0 0 20px;
+}
+.parrafo1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+.parrafo1 img{
+    vertical-align: inherit;
+}
+.parrafo2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+ul{
+    list-style: none;
+}
+.socials{
+    display: flex;
+    place-content: space-evenly;
+    padding-bottom: 20px;
+}
+.socials img{
+    width: 32px;
+    height: 32px;
+}
