@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/fondo.jpg);
+    background-image: url(../images/escritoriojpg);
     background-size: cover;
 }
 .profile-area{
@@ -23,11 +23,11 @@ body{
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    width: 140px;
-    height: 140px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     border: 7px solid #ff6e57bf;
-    margin-top: -80px;
+    margin-top: -150px;
 }
 .card:hover .img2 img{
     border-color: darkmagenta;
@@ -54,11 +54,36 @@ body{
 }
 ul{
     list-style: none;
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
 }
+
 .socials{
     display: flex;
     place-content: space-evenly;
-    padding-bottom: 20px;
+    padding: 20px;
+    background: rgb(250,105,86);
+    background: linear-gradient(90deg, rgba(250,105,86,1) 0%, rgba(144,43,84,1) 35%, rgba(99,17,83,1) 100%);
+   
+}
+.socials a:hover{
+    animation: myAnim 1s ease 0s 1 normal none;  
+}
+@keyframes myAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		transform: scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		transform: scale(1.1);
+	}
 }
 .socials img{
     width: 32px;
